@@ -1,0 +1,272 @@
+*{box-sizing: border-box;}
+
+.max {
+	max-width: 1200px;
+	margin:0 auto;}
+/*----header----*/
+.head {	
+	margin-top: 10px;
+	text-align: center;}
+
+.img-logo-head {
+	width: 15%;
+	border-radius: 50%;}
+
+.child-head {border-bottom: 6px solid black;}
+
+.contenedor-iconos {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ul-nav {
+	display: flex;
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #454545;
+	padding-left: 0px;}
+
+.li-nav{padding-right: 20px;}
+
+.a {
+	text-decoration: none;
+	color: #454545;
+	display: block;
+	padding:10px 0px;}
+
+.a:hover{opacity: 0.4;}
+
+/*------Iconos----*/
+.ul-icons {
+	display: flex;
+	list-style-type: none;}
+
+.p-icons{ 
+	padding: 0px 15px;
+	padding-right: 0;}
+
+/*-------hero-------*/
+.hero {
+	padding: 10px 0px;
+	border-bottom: 6px solid black;}
+
+.img-hero {
+	width: 100%;
+	box-shadow: 1px 1px 10px gray;}
+
+/*----Eventos-----*/
+.contain-artist {
+	width: 300px;
+	padding: 10px 0px;
+}
+.relative{position: relative;}
+
+.absolute {position: absolute;}
+
+.rotate {transform: rotate(-90deg);}
+
+.rotate-names {transform: rotate(90deg)}
+
+.child-card-uno {
+	top:100px;
+	left:-5px;
+}
+
+.child-card-dos {
+	bottom:100px;
+	left:-5px;
+}
+
+.titulo-evento-releases-lista {
+	font-size: 20px;
+	color:gray;
+	font-weight: 10;
+	border-top: 1px solid lightgray;
+	text-align: center;
+	padding: 5px 0px; }
+
+.centrar-cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-left: 1px solid lightgray;}
+
+
+.artistas {
+	width: 200px;
+	overflow: hidden;
+	padding: 10px 0px;}
+
+.cards {
+	width: 100%;
+	transition: transform 260ms linear;
+}
+
+.cards:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+/*Lanzamientos*/
+.contenedor-releases{ 
+	width: 600px;
+	padding: 10px 0px;
+}
+
+.releases{display: flex;}
+
+.img-ep{
+	width:100%;
+	padding: 0px 10px;
+}
+
+.move{
+ 	-webkit-transform: 1s; /* Safari */
+ 	transition: transform 1s;
+}
+
+.move:hover {
+  	-webkit-transform: rotate(-10deg); /* Safari */
+  	transform: rotate(-10deg);
+}
+.move-r:hover{
+	-webkit-transform: rotate(10deg); /* Safari */
+ 	transform: rotate(10deg);
+}
+.child-ep {text-align: center;}
+
+.section-uno {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding:50px 0px;}
+
+.mayus {text-transform: uppercase;}
+
+/*---------Artistas-----*/
+
+.li-lista-artist{list-style-type: none;}
+
+.centrar-lista{
+	display: flex;
+	flex-direction: column;
+	align-items: center;}
+
+.ul-lista {padding: 0;}
+
+.logo-pie {width: 200px;}
+
+.img-logo-pie {width: 100%;}
+
+.margen-lista {padding-left:30px;}
+
+/*------Footer------*/
+
+.footer {
+	height: 100px;
+	display: flex;
+	background: #ECECEC;
+	align-items:flex-end;
+	justify-content: flex-end;
+	padding: 10px;}
+
+.pie {
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}	
+
+.contacto {
+	font-size: 15px;
+	padding: 10px;
+}
+
+.img-footer-t{width: 30px;}
+
+.img-footer {width: 100%;}
+
+.copy {padding-top:50px;}
+
+.input {height: 30px;}
+
+.title-responsive {opacity: 0;}
+
+@media (max-width: 600px) {
+
+.img-logo-head {width: 25%;}	
+
+.caja-nav {width: 300px;}
+
+.contenedor-iconos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
+.p-icons {padding-right: 0px;}
+
+.ul-icons {padding-left: 0px;}
+
+.section-uno {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding:50px 0px;}
+
+.ul-nav {font-size: 10px;}
+
+.contenedor-releases{ 
+	width: 300px;
+	padding: 10px 0px;
+}
+
+.releases{
+		display: flex;
+		flex-direction: column;
+		}
+
+.child-ep {padding-bottom: 10px;}
+
+.title-responsive {
+	opacity: 2;
+ 	padding: 50px;
+ 	border-top: white;
+ 	text-decoration: overline;
+ 	font-size: 25px;}
+
+ .parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+
+.title-responsive-dos {opacity: 0;}
+
+}
